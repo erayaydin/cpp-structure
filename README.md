@@ -1,6 +1,8 @@
 # C++ Boiler Plate
 ------------------
 
+Build Status: ![Build Status](https://travis-ci.org/erayaydin/cpp-boilerplate.svg?branch=master)
+
 ## Project Folder Tree
 
 * **bin:** The output executables go here, both for app and for any tests and spikes.
