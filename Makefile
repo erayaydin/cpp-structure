@@ -41,7 +41,7 @@ clean:
 tester:
   $(CC) $(CFLAGS) $(TESTDIR)/$(TESTAPP).$(SRCEXT) $(INC) $(LIB) -o $(BINDIR)/$(TESTAPP)
 
-ticket:
+example:
   $(CC) $(CFLAGS) $(SPIKEDIR)/example.cpp $(INC) $(LIB) -o $(BINDIR)/example
 
 .PHONY: clean
