@@ -24,24 +24,24 @@ LIB := # Libraries flags
 INC := -I include # Ensures all headers in the include folder
 
 $(TARGET): $(OBJECTS)
-  @echo " Linking..."; # Description
-  @echo " $(CC) $^ -o $(TARGET) $(LIB)"; # Command
-  $(CC) $^ -o $(TARGET) $(LIB) # Exec command
+	@echo " Linking..." # Description
+	@echo " $(CC) $^ -o $(TARGET) $(LIB)" # Command
+	$(CC) $^ -o $(TARGET) $(LIB)
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
-  @mkdir -p $(BUILDDIR)
-  @echo "$(CC) $(CFLAGS) $(INC) -c -o $@ $<";
-  $(CC) $(CFLAGS) $(INC) -c -o $@ $<
+	@mkdir -p $(BUILDDIR)
+	@echo "$(CC) $(CFLAGS) $(INC) -c -o $@ $<";
+	$(CC) $(CFLAGS) $(INC) -c -o $@ $<
 
 clean:
-  @echo " Cleaning...";
-  @echo " $(RM) -r $(BUILDDIR) $(TARGET)";
-  $(RM) -r $(BUILDDIR) $(TARGET)
+	@echo " Cleaning...";
+	@echo " $(RM) -r $(BUILDDIR) $(TARGET)";
+	$(RM) -r $(BUILDDIR) $(TARGET)
 
 tester:
-  $(CC) $(CFLAGS) $(TESTDIR)/$(TESTAPP).$(SRCEXT) $(INC) $(LIB) -o $(BINDIR)/$(TESTAPP)
+	$(CC) $(CFLAGS) $(TESTDIR)/$(TESTAPP).$(SRCEXT) $(INC) $(LIB) -o $(BINDIR)/$(TESTAPP)
 
 example:
-  $(CC) $(CFLAGS) $(SPIKEDIR)/example.cpp $(INC) $(LIB) -o $(BINDIR)/example
+	$(CC) $(CFLAGS) $(SPIKEDIR)/example.cpp $(INC) $(LIB) -o $(BINDIR)/example
 
 .PHONY: clean
