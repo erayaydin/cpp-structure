@@ -16,7 +16,7 @@
 
 * **Header:** Application name, author, readme, website, todo and fix notes.
 * **Variables:** Main compiler, directory names, test application name
-* **Options: ** Extension, flags, lib linking
-* **Clean: ** Build directory and application executable clean.
-* **Tester: ** Test file compiling
-* **Example: ** Example for a spike
+* **Options:** Extension, flags, lib linking
+* **Clean:** Build directory and application executable clean.
+* **Tester:** Test file compiling
+* **Example:** Example for a spike
