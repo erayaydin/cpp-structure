@@ -26,7 +26,7 @@ INC := -I include # Ensures all headers in the include folder
 $(TARGET): $(OBJECTS)
 	@echo " Linking..." # Description
 	@echo " $(CC) $^ -o $(TARGET) $(LIB)" # Command
-	$(CC) $^ -o $(TARGET) $(LIB)
+	$(CC) $^ -o $(TARGET) $(CFLAGS) $(LIB)
 
 $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 	@mkdir -p $(BUILDDIR)
