@@ -1,4 +1,4 @@
-# C++ Boiler Plate
+# C++ Example Project Structure
 ------------------
 
 Build Status: ![Build Status](https://travis-ci.org/erayaydin/cpp-boilerplate.svg?branch=master)
